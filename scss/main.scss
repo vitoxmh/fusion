@@ -1,10 +1,24 @@
-body{
-    background-color: red; 
+@import 'tools/_reset';
+@import 'settings/_settings';
+@import 'tools/_mixins';
 
-}  
+/* objects */
+@import 'objects/_o-font';
+
+/* Layouts */
+@import 'layouts/_c-footer';
+@import 'layouts/_c-header';
+
+/* Components */
 
 
- 
-h1{
-    color: red;
-}
+
+
+/* Pages */
+
+
+@import 'utilities/_utilities';
+
+
+
+/* Templates */
