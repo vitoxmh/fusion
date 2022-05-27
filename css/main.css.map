@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,KACI,qBAMJ,GACI","file":"main.css","sourcesContent":["body{\n    background-color: red; \n\n}  \n\n\n \nh1{\n    color: red;\n}"]}

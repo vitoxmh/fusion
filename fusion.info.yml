@@ -1,0 +1,11 @@
+name: Fusiona
+type: theme
+description: Un tema inicial de Twitter Bootstrap
+core_version_requirement: ^8 || ^8
+base theme: false
+libraries: 
+    - fusion/global-styling
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
