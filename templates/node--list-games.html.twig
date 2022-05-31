@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+{{ attach_library('bartik/classy.node') }}
+<article{{ attributes.addClass(classes) }}>
+  <header>
+    <img src="{{ file_url(node.field_img_caja.entity.uri.value) }}">
+  </header>
+  <div{{ title_attributes.addClass('node__title') }}>
+    <h2>{{ label }}</h2>
+    <p>{{ node.body.0.value | striptags }}<p>
+    <a href="{{ url }}">Ver Más</a>
+  </div>
+</article>
